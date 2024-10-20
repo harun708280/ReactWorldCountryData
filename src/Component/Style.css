@@ -1,0 +1,100 @@
+.card {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer
+}
+.visited-col{
+    background:yellowgreen;
+}
+.non-visit{
+    background: linear-gradient(to bottom, yellowgreen, purple);/
+}
+.card:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+
+.country{
+    display: grid;
+    grid-template-columns:repeat(4,1fr)
+}
+.row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 10px; 
+}
+.visited {
+    background-color: gray; 
+}
+.visiteds{
+    background: linear-gradient(to bottom,white,white,red);
+
+}
+
+table {
+    
+    width: 100%;
+    border-collapse: collapse; 
+  }
+  th{
+    background :purple
+  }
+  th, td {
+    border: 4px solid yellowgreen;
+    padding: 8px;
+    text-align: left;
+  }
+
+  
+
+  tbody tr:nth-child(even) {
+    background: linear-gradient(to left, yellowgreen, purple);
+  }
+  tbody tr:nth-child(odd) {
+    background: linear-gradient(to right, yellowgreen, purple);
+  }
+
+  tbody tr:nth-child:hover {
+    background-color:yellowgreen ; 
+  }
+
+  .container {
+    display: flex;
+    
+    
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    height: 100%; 
+    padding: 10px;
+    position: relative; 
+}
+
+.visit-button {
+    background: linear-gradient(to bottom, purple, red); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease; 
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+}
+
+.visit-button:hover {
+    background: linear-gradient(to bottom, red, purple); 
+    transform: scale(1.05); 
+}
